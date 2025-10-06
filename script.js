@@ -14,10 +14,6 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 /*MACRO TASK N.1
     - chiedere l'età 
     - chiedere i kilometri
-
-    TOOLS:
-    - Variabili 
-    - prompt 
 */
 
 //Prompt x l'età
@@ -39,12 +35,25 @@ console.log(price);
 
 /*MACRO TASK N.3 
     - calcolare eventuali sconti sul prezzo del biglietto in base all'età
-    - Variabili degli sconti 
-    - condizioni in cui gli sconti si applicano
+        - Variabili degli sconti 
+        - condizioni in cui gli sconti si applicano
 */
 
 const sconto_minori = 20
 const sconto_anziani = 40
+
+if (ages < 18) {
+    price_kid = (price / 100) * sconto_minori;
+    final_price = price - price_kid;
+    console.log(final_price);  
+}
+
+else if (ages > 65) {
+    price_old = (price / 100) * sconto_anziani;
+    final_price = price - price_old;
+    console.log(final_price);  
+}
+
 
 
 
