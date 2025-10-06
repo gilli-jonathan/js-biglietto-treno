@@ -41,21 +41,33 @@ console.log(price);
 
 const sconto_minori = 20
 const sconto_anziani = 40
+let final_price 
 
 if (ages < 18) {
+    //calcolo prezzo per mocciosi
     price_kid = (price / 100) * sconto_minori;
-    final_price = price - price_kid;
+    final_price = (price - price_kid).toFixed(2);
     console.log(final_price);  
 }
 
 else if (ages > 65) {
+    //calcolo prezzo per nonnetti
     price_old = (price / 100) * sconto_anziani;
-    final_price = price - price_old;
+    final_price = (price - price_old).toFixed(2);
     console.log(final_price);  
 }
 
+else {
+    //prezzo pieno
+    final_price = price
+    final_price = final_price.toFixed(2)
+    console.log(final_price);
+}
 
 
+//prezzo finale che appare in pagina
+    
+alert(final_price + ' €')
 
 
 
