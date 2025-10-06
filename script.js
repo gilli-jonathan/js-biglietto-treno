@@ -13,4 +13,8 @@
 const ages = Number(prompt('inserisci la tua vecchittudine'))
 console.log(ages);
 
+//Prompt x i kilometri
+const kilometers = Number(prompt('Quanta strada percorrerai'))
+console.log(kilometers);
+
 
