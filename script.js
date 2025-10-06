@@ -9,3 +9,8 @@
     - prompt 
 */
 
+//Prompt x l'età
+const ages = Number(prompt('inserisci la tua vecchittudine'))
+console.log(ages);
+
+
